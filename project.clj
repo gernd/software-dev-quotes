@@ -1,4 +1,4 @@
-(defproject my-ring-app "0.1.0-SNAPSHOT"
+(defproject software-dev-quotes "0.1.0-SNAPSHOT"
   :min-lein-version "2.0.0"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
@@ -13,4 +13,4 @@
   :uberjar-name "software-dev-quotes.jar"
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all
-                       :main my-ring-app.core}})
+                       :main software-dev-quotes.core}})
