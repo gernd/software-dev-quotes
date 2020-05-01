@@ -9,7 +9,10 @@
                  [environ "1.1.0"]
                  [hiccup "1.0.5"]
                  ]
-  :plugins [[lein-ring "0.12.5"]]
+  :plugins [
+            [lein-ring "0.12.5"]
+            [lein-ancient "0.6.15"]
+            ]
   :ring {:handler software-dev-quotes.core/my-handler}
   :main ^:skip-aot software-dev-quotes.core
   :uberjar-name "software-dev-quotes.jar"
