@@ -24,8 +24,14 @@
                     [:link {:href "https://unpkg.com/nes.css@2.3.0/css/nes.min.css" :rel "stylesheet"}]
                     ]
                    [:body [:p "Hello folks from the software dev quotes app"]
-                    [:div.nes-balloon.from-left "This is a very clever quote. - someone"]
-                    ]])
+                    [:div.nes-container.with-title.is-centered
+                     [:p.title "Random quote"]
+                     [:p.nes-balloon.from-left "This is a very clever quote. - someone"]
+                     [:p [:i.nes-icon.is-small.like]
+                      ]
+                     [:p "Good morning. Thou hast had a good night's sleep, I hope."]
+                     ]
+                    [:a {:href "https://www.github.com"} [:i.nes-icon.github.is-small] " Contribute on github"]]])
    }
   )
 
