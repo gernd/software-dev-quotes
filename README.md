@@ -24,9 +24,13 @@ FIXME: listing of options this app accepts.
 
 ...
 
-### Any Other Sections
-### That You Think
-### Might be Useful
+### Development
+Start the local development server using 
+
+    lein ring server
+    
+Afterwards the server is running on port 3000
+
 
 ## License
 
