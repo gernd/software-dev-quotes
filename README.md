@@ -12,18 +12,6 @@ FIXME: explanation
 
     $ java -jar my-ring-app-0.1.0-standalone.jar [args]
 
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
 ### Development
 Start the local development server using 
 
