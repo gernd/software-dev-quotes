@@ -9,6 +9,8 @@
                  [environ "1.1.0"]
                  [hiccup "1.0.5"]
                  ]
+  :plugins [[lein-ring "0.12.5"]]
+  :ring {:handler software-dev-quotes.core/my-handler}
   :main ^:skip-aot software-dev-quotes.core
   :uberjar-name "software-dev-quotes.jar"
   :target-path "target/%s"

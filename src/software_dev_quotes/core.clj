@@ -17,7 +17,7 @@
                     [:link {:href "https://fonts.googleapis.com/css?family=Press+Start+2P" :rel "stylesheet"}]
                     [:link {:href "https://unpkg.com/nes.css@2.3.0/css/nes.min.css" :rel "stylesheet"}]
                     ]
-                   [:body [:p "Hello from the software dev quotes app"]]])
+                   [:body [:p "Hello folks from the software dev quotes app"]]])
    }
   )
 
