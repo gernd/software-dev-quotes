@@ -12,6 +12,7 @@
   :plugins [
             [lein-ring "0.12.5"]
             [lein-ancient "0.6.15"]
+            [lein-cljfmt "0.6.6"]
             ]
   :ring {:handler software-dev-quotes.core/my-handler}
   :main ^:skip-aot software-dev-quotes.core
