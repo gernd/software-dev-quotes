@@ -17,5 +17,9 @@ jobs:
       run: lein cljfmt check
     - name: Compute test coverage
       run: lein cloverage
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Test Coverage Overview
+        path: target/coverage
     - name: Check for outdated dependencies
       run: lein ancient
