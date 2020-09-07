@@ -10,8 +10,7 @@
              in the wrong places and at the wrong times; premature optimization is the root of all evil
              (or at least most of it) in programming." :from "Donald Knuth"}
              {:quote "Any fool can write code that a computer can understand.
-              Good programmers write code that humans can understand." :from "Martin Fowler"}
-             ])
+              Good programmers write code that humans can understand." :from "Martin Fowler"}])
 
 (defn get-random-quote []
   "Returns a random quote from the available quotes"
@@ -31,10 +30,8 @@
                      [:body [:h1 "Hello folks from the software dev quotes app"]
                       [:div.nes-container.with-title.is-centered
                        [:p.title "Random quote"]
-                       [:p.nes-balloon.from-left (str (:quote random-quote) " - " (:from random-quote))]
-                       ]
-                      [:a {:href "https://www.github.com"} [:i.nes-icon.github.is-small] " Contribute on github"]]])}
-    ))
+                       [:p.nes-balloon.from-left (str (:quote random-quote) " - " (:from random-quote))]]
+                      [:a {:href "https://www.github.com"} [:i.nes-icon.github.is-small] " Contribute on github"]]])}))
 
 (defn -main
   "Fires up the Ring app"
