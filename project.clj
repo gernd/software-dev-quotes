@@ -8,6 +8,7 @@
                  [ring "1.8.0"]
                  [environ "1.1.0"]
                  [hiccup "1.0.5"]
+                 [org.clojure/tools.trace "0.7.10"]
                  ]
   :plugins [
             [lein-ring "0.12.5"]
