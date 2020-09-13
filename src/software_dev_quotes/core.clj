@@ -31,7 +31,7 @@
                       [:div.nes-container.with-title.is-centered
                        [:p.title "Random quote"]
                        [:p.nes-balloon.from-left (str (:quote random-quote) " - " (:from random-quote))]]
-                      [:a {:href "https://www.github.com"} [:i.nes-icon.github.is-small] " Contribute on github"]]])}))
+                      [:a {:href "https://github.com/gernd/software-dev-quotes"} [:i.nes-icon.github.is-small] " Contribute on github"]]])}))
 
 (defn -main
   "Fires up the Ring app"
