@@ -14,7 +14,10 @@
              {:quote "Any fool can write code that a computer can understand.
               Good programmers write code that humans can understand."
               :from  "Martin Fowler"
-              :added 1599996610}])
+              :added 1599996610}
+             {:quote "Truth can only be found in one place: the code."
+              :from  "Robert C. Martin"
+              :added 1600004291}])
 
 (defn get-random-quote []
   "Returns a random quote from the available quotes"
