@@ -8,17 +8,30 @@
 
 (def quotes [{:quote "The real problem is that programmers have spent far too much time worrying about efficiency
              in the wrong places and at the wrong times; premature optimization is the root of all evil
-             (or at least most of it) in programming." :from "Donald Knuth"}
+             (or at least most of it) in programming."
+              :from  "Donald Knuth"
+              :added 1599995610}
              {:quote "Any fool can write code that a computer can understand.
-              Good programmers write code that humans can understand." :from "Martin Fowler"}])
+              Good programmers write code that humans can understand."
+              :from  "Martin Fowler"
+              :added 1599996610}])
 
 (defn get-random-quote []
   "Returns a random quote from the available quotes"
   (nth quotes (rand-int (count quotes))))
 
+(defn get-latest-quotes []
+  "Gets the latest quotes from the available quotes"
+  (take 3 (sort-by :added #(compare %2 %1) quotes)))
+
+(defn render-quote [quote]
+  (html
+   [:p.nes-balloon.from-left (str (:quote quote) " - " (:from quote))]))
+
 (defn my-handler
   [request]
-  (let [random-quote (get-random-quote)]
+  (let [random-quote (get-random-quote)
+        latest-quote-html (map render-quote (get-latest-quotes))]
     {:status  200
      :headers {"Content-Type" "text/html; charset=UTF-8"}
      :body    (html [:html
@@ -31,6 +44,9 @@
                       [:div.nes-container.with-title.is-centered
                        [:p.title "Random quote"]
                        [:p.nes-balloon.from-left (str (:quote random-quote) " - " (:from random-quote))]]
+                      [:div.nes-container.with-title.is-centered
+                       [:p.title "Latest quotes"]
+                       latest-quote-html]
                       [:a {:href "https://github.com/gernd/software-dev-quotes"} [:i.nes-icon.github.is-small] " Contribute on github"]]])}))
 
 (defn -main
