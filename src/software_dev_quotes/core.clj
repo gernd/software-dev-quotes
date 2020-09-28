@@ -31,7 +31,7 @@
   (html
    [:p.nes-balloon.from-left (str (:quote quote) " - " (:from quote))]))
 
-(defn my-handler
+(deftrace my-handler
   [request]
   (let [random-quote (get-random-quote)
         latest-quote-html (map render-quote (get-latest-quotes))]
