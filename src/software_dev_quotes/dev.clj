@@ -4,10 +4,8 @@
             [software-dev-quotes.core-test :refer :all]
             [clojure.test :refer :all]))
 
-
 (defn reload-and-run-tests
   "Reloads and runs all tests"
   []
   (load "core_test")
-  (run-tests 'software-dev-quotes.core-test)
-  )
+  (run-tests 'software-dev-quotes.core-test))
