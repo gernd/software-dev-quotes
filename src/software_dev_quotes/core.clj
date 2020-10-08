@@ -17,7 +17,10 @@
               :added 1599996610}
              {:quote "Truth can only be found in one place: the code."
               :from  "Robert C. Martin"
-              :added 1600004291}])
+              :added 1600004291}
+             {:quote "The function of good software is to make the complex appear to be simple."
+              :from  "Grady Booch"
+              :added 1602179334}])
 
 (defn get-random-quote []
   "Returns a random quote from the available quotes"
